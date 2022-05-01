@@ -1,8 +1,8 @@
 ## 📚 Engineering Notes
 
-<center>
-    <img width="400px" src="https://wallpaperbat.com/img/64596-engineering-desktop-wallpaper.jpg">
-</center>
+<p align="center">
+    <img width="500px" src="https://wallpaperbat.com/img/64596-engineering-desktop-wallpaper.jpg">
+</p>
 
 ℹ️  In this repository, you will find my Software Engineering notes and reading/learning list, as well as some notes for Computer Science students. Main topics:
 * **Software Architecture** - architectural styles and patterns, design patterns and system design/modeling   
