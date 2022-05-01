@@ -7,7 +7,7 @@
 | Source        | [Udemy](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)                                   |
 | Author        | [Stephen Grider](https://www.udemy.com/user/sgslo/)                                                               |
 | What to learn | `Docker` `Kubernetes` `AWS`                                                                                       |
-| Scope/Topic   | `Software Architecture`                                                                                           |
+| Scope/Topic   | `Software Development`                                                                                            |
 | Description   | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows |
 | Status        | `In progress`                                                                                                     |
 | Last update   | 01.05.2022                                                                                                        |

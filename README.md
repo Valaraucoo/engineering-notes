@@ -14,9 +14,9 @@
 
 
 ### 🧑‍💼 In progress
-| Title                                                                                               | What to learn               | Scope/Topic             | Description                                                                                                        | Type                                                                                      |
-|-----------------------------------------------------------------------------------------------------|-----------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
-| [Docker and Kubernetes: The Complete Guide](/resources/docker_and_kubernetes_the_complete_guide.md) | `Docker` `Kubernetes` `AWS` | `Software Architecture` | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows  | [🎥 Udemy Course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/) |
+| Title                                                                                               | What to learn               | Scope/Topic            | Description                                                                                                        | Type                                                                                      |
+|-----------------------------------------------------------------------------------------------------|-----------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
+| [Docker and Kubernetes: The Complete Guide](/resources/docker_and_kubernetes_the_complete_guide.md) | `Docker` `Kubernetes` `AWS` | `Software Development` | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows  | [🎥 Udemy Course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/) |
 
 
 ### 🏁 Finished
@@ -33,7 +33,7 @@
 | [How does a relational database work](http://coding-geek.com/how-databases-work/) | `SQL Engine`  | `Databases`  | Details of SQL Engine implementation and how it works |
 
 
-### Learning plans for 2022
+### 🗺️ Learning plans for 2022
 - ✅ gRPC
 - ✅ Docker
 - 👀 Kubernetes
@@ -45,7 +45,7 @@
 - ⌛ RabbitMQ
 
 
-### Inspiration and credits
+### 🏅 Inspiration and credits
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
 
 
