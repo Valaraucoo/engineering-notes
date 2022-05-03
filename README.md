@@ -14,24 +14,24 @@
 
 
 ### 🧑‍💼 In progress
-| Title                                                                                               | What to learn               | Scope/Topic            | Description                                                                                                        | Type                                                                                      |
+| Title                                                                                               | What to learn               | Scope/Topic            | Description                                                                                                        | Type/Source                                                                               |
 |-----------------------------------------------------------------------------------------------------|-----------------------------|------------------------|--------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|
 | [Docker and Kubernetes: The Complete Guide](/resources/docker_and_kubernetes_the_complete_guide.md) | `Docker` `Kubernetes` `AWS` | `Software Development` | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows  | [🎥 Udemy Course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/) |
 
 
 ### 🏁 Finished
-| Title | What to learn | Scope/Topic | Description | Type | Scores |
-|-------|---------------|-------------|-------------|------|--------|
-|       |               |             |             |      |        |
+| Title | What to learn | Scope/Topic | Description | Type/Source | Scores |
+|-------|---------------|-------------|-------------|-------------|--------|
+|       |               |             |             |             |        |
 
 
 
 
 ### ⏱️ Planning/New
-| Title                                                                                | What to learn | Scope/Topic             | Description                                           |
-|--------------------------------------------------------------------------------------|---------------|-------------------------|-------------------------------------------------------|
-| [How does a relational database work](http://coding-geek.com/how-databases-work/)    | `SQL Engine`  | `Databases`             | Details of SQL Engine implementation and how it works |
-| [Async I/O High-level API](https://docs.python.org/3/library/asyncio-api-index.html) | `Async I/O`   | `Software Developmnet`  | Details of Python's async/await APIs.                 |
+| Title                                                                                | What to learn | Scope/Topic             | Description                                           | Type/Source                                                                 |
+|--------------------------------------------------------------------------------------|---------------|-------------------------|-------------------------------------------------------|-----------------------------------------------------------------------------|
+| [How does a relational database work](http://coding-geek.com/how-databases-work/)    | `SQL Engine`  | `Databases`             | Details of SQL Engine implementation and how it works | [📰 Article](http://coding-geek.com/how-databases-work/)                    |
+| [Async I/O High-level API](https://docs.python.org/3/library/asyncio-api-index.html) | `Async I/O`   | `Software Developmnet`  | Details of Python's async/await APIs.                 | [📒Documentation](https://docs.python.org/3/library/asyncio-api-index.html) |
 
 
 ### 🗺️ Learning plans for 2022
