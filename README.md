@@ -34,7 +34,7 @@
 ### 🗺️ Learning plans for 2022
 - ✅ gRPC
 - ✅ Docker
-- 👀 Kubernetes
+- 👀 Kubernetes - mastering in progress
 - ⌛ MongoDB
 - ⌛ Elixir & Phoenix
 - ⌛ [Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
