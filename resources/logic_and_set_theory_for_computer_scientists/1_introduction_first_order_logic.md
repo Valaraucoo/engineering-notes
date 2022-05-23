@@ -56,14 +56,13 @@ $$ \frac{A_1, \ldots,A_n}{B} $$
 
 💡 **System ekstensjolany** — ograniczenia względem naturalnego użycia języka, implikujące uproszczenia na poziomie formalnym.
 
-
 - Alfabet KRZ:
-    - Zmienne zdaniowe: $p_1, p_2, \ldots, p_n$ (jest ich przeliczalna ilość)
-    - Operatory/funktory unarne: $\sim$ (negacja)
-    - Operatory/funktory binarne: $\implies, \iff, \land, \lor$
+    - Zmienne zdaniowe: <img src="https://render.githubusercontent.com/render/math?math=p_1, p_2, \ldots, p_n"> (jest ich przeliczalna ilość)
+    - Operatory/funktory unarne: <img src="https://render.githubusercontent.com/render/math?math=\sim"> (negacja)
+    - Operatory/funktory binarne: <img src="https://render.githubusercontent.com/render/math?math=\implies, \iff, \land, \lor">
 - Język KRZ:
-    - $\forall _i (p_i \in F)$, każda zmienna zdaniowa KRZ należy do języka KRZ
-    - Jeżeli $p, q \in F$ to $\sim p \in F$ etc.
+    - <img src="https://render.githubusercontent.com/render/math?math=\forall _i (p_i \in F)">, każda zmienna zdaniowa KRZ należy do języka KRZ
+    - Jeżeli <img src="https://render.githubusercontent.com/render/math?math=p, q \in F"> to <img src="https://render.githubusercontent.com/render/math?math=\sim p \in F"> etc.
 - [Aksjomatyka KRZ](https://pl.wikipedia.org/wiki/Klasyczny_rachunek_zda%C5%84)
 - Reguły KRZ:
     - Reguła odrywania — *modus ponens*:
@@ -71,13 +70,13 @@ $$ \frac{A_1, \ldots,A_n}{B} $$
 
     - Przy pomocy reguły odrywania możemy tworzyć nowe, prawdziwe formuły ze zbioru aksjomatów
 
-**Dowód formalny** — dowód formalny formuły $\phi$ w oparciu o zbiory formuł Ax, język KRZ ($\Sigma$) i zbiór reguł KRZ nazywamy dowolny skończony ciąg formuł $D = \langle \Psi_1, \Psi _2, \ldots, \Psi _n \rangle$ taki, że:
+**Dowód formalny** — dowód formalny formuły <img src="https://render.githubusercontent.com/render/math?math=\phi"> w oparciu o zbiory formuł Ax, język KRZ (<img src="https://render.githubusercontent.com/render/math?math=\Sigma">) i zbiór reguł KRZ nazywamy dowolny skończony ciąg formuł <img src="https://render.githubusercontent.com/render/math?math=D = \langle \Psi_1, \Psi _2, \ldots, \Psi _n \rangle"> taki, że:
 
-- $\phi = \Psi_n$ — dowodzona formuła jest n-tym elementem ciągu dowodu formalnego
-- $\Psi_1\in Ax \cup \Sigma$ — pierwszy wyraz dowodu jest albo aksjomatem, albo poprawnym zdaniem KRZ
-- $\forall _i \Psi_i\in Ax\cup \Sigma \lor \exists _{r \in R}$ taka, że $\Psi _i$ powstaje z wcześniejszych formuł w ciągu D przez zastosowanie do nich reguły R
+- <img src="https://render.githubusercontent.com/render/math?math=\phi = \Psi_n"> — dowodzona formuła jest n-tym elementem ciągu dowodu formalnego
+- <img src="https://render.githubusercontent.com/render/math?math=\Psi_1\in Ax \cup \Sigma"> — pierwszy wyraz dowodu jest albo aksjomatem, albo poprawnym zdaniem KRZ
+- <img src="https://render.githubusercontent.com/render/math?math=\forall _i \Psi_i\in Ax\cup \Sigma \lor \exists _{r \in R}"> taka, że <img src="https://render.githubusercontent.com/render/math?math=\Psi _i"> powstaje z wcześniejszych formuł w ciągu D przez zastosowanie do nich reguły <img src="https://render.githubusercontent.com/render/math?math=R">
 
-Formuła $\phi$ jest wywodliwa/ma dowód na podstawie zbioru $\Sigma$ (zwanego założeniami) przy ustalonych $Ax$  i $R$, gdy istnieje dowód formalny dla $\phi$ oparty o aksjomaty, język i reguły systemu. Oznaczamy: $\Sigma \vdash \phi$.
+Formuła <img src="https://render.githubusercontent.com/render/math?math=\phi"> jest wywodliwa/ma dowód na podstawie zbioru <img src="https://render.githubusercontent.com/render/math?math=\Sigma"> (zwanego założeniami) przy ustalonych Ax  i R, gdy istnieje dowód formalny dla <img src="https://render.githubusercontent.com/render/math?math=\phi"> oparty o aksjomaty, język i reguły systemu. Oznaczamy: <img src="https://render.githubusercontent.com/render/math?math=\Sigma \vdash \phi">.
 
 Jeżeli zbiór $\Sigma$  jest zbiorem pustym, to zapisujemy: $\vdash \phi$. W KRZ $\vdash \phi$ oznacza, że albo $\phi$ jest aksjomatem, albo da się ją wyprowadzić przez *modus ponens* z aksjomatów — czyli $\phi$ jest tautologią, co zapisujemy $\vDash \phi$
 
