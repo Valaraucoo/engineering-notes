@@ -1,4 +1,4 @@
-## 🧠 1. Logic and set theory for Computer Scientists
+## 🧠 1. First order logic, introduction to logic
 
 [🔙 Home Page](https://github.com/Valaraucoo/engineering-notes/)
 
@@ -9,9 +9,14 @@
 | What to learn | First order logic, introduction to logic        |
 | Scope/Topic   | `Maths`                                         |
 | Description   | Classical logic, first order logic              |
-| Status        | `In progress`                                   |
+| Status        | `Done`                                          |
 | Language      | 🇵🇱 Polish                                     |
 | Last update   | 23.05.2022                                      |
+
+**Table of contents:**
+1. First order logic, introduction to logic
+2. [Fuzzy logic and fuzzy sets](/resources/logic_and_set_theory_for_computer_scientists/2_fuzzy_sets.md)
+3. [Syllogisms](/resources/logic_and_set_theory_for_computer_scientists/3_syllogisms.md)
 
 Tematyka: **Wstęp, Klasyczny Rachunek Zdań** 
 
