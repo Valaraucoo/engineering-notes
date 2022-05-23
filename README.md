@@ -14,9 +14,10 @@
 
 
 ### 🧑‍💼 In progress
-| Title                                                                                | What to learn | Scope/Topic            | Description                           | Type/Source                                                               |
-|--------------------------------------------------------------------------------------|---------------|------------------------|---------------------------------------|---------------------------------------------------------------------------|
-| [Async I/O High-level API](https://docs.python.org/3/library/asyncio-api-index.html) | `Async I/O`   | `Software Developmnet` | Details of Python's async/await APIs. | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html) |
+| Title                                                                                | What to learn         | Scope/Topic            | Description                                           | Type/Source                                                               |
+|--------------------------------------------------------------------------------------|-----------------------|------------------------|-------------------------------------------------------|---------------------------------------------------------------------------|
+| [Async I/O High-level API](https://docs.python.org/3/library/asyncio-api-index.html) | `Async I/O`           | `Software Developmnet` | Details of Python's async/await APIs.                 | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html) |
+| Logic and set theory for Computer Scientists                                         | `Logic`, `Set Theory` | `Mathst`               | First order logic, syllogisms, logics and fuzzy sets. | Lecture                                                                   |
 
 
 ### 🏁 Finished

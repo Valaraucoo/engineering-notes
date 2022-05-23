@@ -9,8 +9,8 @@
 | What to learn | `Docker` `Kubernetes` `AWS`                                                                                       |
 | Scope/Topic   | `Software Development`                                                                                            |
 | Description   | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows |
-| Status        | `In progress`                                                                                                     |
-| Last update   | 01.05.2022                                                                                                        |
+| Status        | `Finished`                                                                                                        |
+| Last update   | 23.05.2022                                                                                                        |
 
 ### Notes
 
