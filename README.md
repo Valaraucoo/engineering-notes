@@ -47,4 +47,4 @@
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
 
 
-Last update: 01.05.2022
+Last update: 23.05.2022
