@@ -9,9 +9,9 @@
 | What to learn | Syllogisms     |
 | Scope/Topic   | `Maths`        |
 | Description   | Syllogisms     |
-| Status        | `In progress`  |
+| Status        | `Finished`  |
 | Language      | 🇵🇱 Polish    |
-| Last update   | 23.05.2022     |
+| Last update   | 10.06.2022     |
 
 **Table of contents:**
 1. [First order logic, introduction to logic](/resources/logic_and_set_theory_for_computer_scientists/1_introduction_first_order_logic.md)
