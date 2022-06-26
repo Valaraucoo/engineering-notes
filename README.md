@@ -27,9 +27,11 @@
 
 
 ### ⏱️ Planning/New
-| Title                                                                                | What to learn | Scope/Topic             | Description                                           | Type/Source                                                               |
-|--------------------------------------------------------------------------------------|---------------|-------------------------|-------------------------------------------------------|---------------------------------------------------------------------------|
-| [How does a relational database work](http://coding-geek.com/how-databases-work/)    | `SQL Engine`  | `Databases`             | Details of SQL Engine implementation and how it works | [Article](http://coding-geek.com/how-databases-work/)                     |
+| Title                                                                               | What to learn   | Scope/Topic                             | Description                                                                     | Type/Source                                                    |
+|-------------------------------------------------------------------------------------|-----------------|-----------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------|
+| [How does a relational database work](http://coding-geek.com/how-databases-work/)   | `SQL Engine`    | `Databases`                             | Details of SQL Engine implementation and how it works                           | [Article](http://coding-geek.com/how-databases-work/)          |
+| [System Design Primer](https://github.com/donnemartin/system-design-primer)         | `System Design` | `System Design`, `Software Engineering` | Learn how to design large-scale systems. Prep for the system design interview.  | [GH Repo](https://github.com/donnemartin/system-design-primer) |
+
 
 
 ### 🗺️ Learning plans for 2022
