@@ -17,7 +17,7 @@
 | Title                                                                                                                                | What to learn                  | Scope/Topic                    | Description                                                                                                            | Type/Source                                                                                                |
 |--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
 | [Async I/O High-level API](/resources/python_async_io.md)                                                                            | `Async I/O`                    | `Software Developmnet`         | Details of Python's async/await APIs.                                                                                  | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html)                                  |
-| [Terraform on AWS EKS Kubernetes IaC SRE](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/) | `K8s`, `DevOps`, `AWS`, `IaaS` | `Software Developmnet`         | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA). | [Udemy Course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)  |
+| [Terraform on AWS EKS Kubernetes IaC SRE](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/) | `K8s`, `DevOps`, `AWS`, `IaaC` | `Software Developmnet`         | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA). | [Udemy Course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)  |
 
 ### 🏁 Finished
 | Title                                                                                                                                       | What to learn                | Scope/Topic            | Description                                                                                                       | Type/Source                                                                            | Scores |
@@ -27,11 +27,11 @@
 
 
 ### ⏱️ Planning/New
-| Title                                                                                                                         | What to learn   | Scope/Topic                             | Description                                                                                                            | Type/Source                                                                              |
-|-------------------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [How does a relational database work](http://coding-geek.com/how-databases-work/)                                             | `SQL Engine`    | `Databases`                             | Details of SQL Engine implementation and how it works                                                                  | [Article](http://coding-geek.com/how-databases-work/)                                    |
-| [System Design Primer](https://github.com/donnemartin/system-design-primer)                                                   | `System Design` | `System Design`, `Software Engineering` | Learn how to design large-scale systems. Prep for the system design interview.                                         | [GH Repo](https://github.com/donnemartin/system-design-primer)                           |
-| [Kubernetes Certified Application Developer (CKAD)](https://www.udemy.com/course/certified-kubernetes-application-developer/) | `K8s`, `DevOps` | `Software Development`                  | Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser - DevOps - CKAD. | [Udemy Course](https://www.udemy.com/course/certified-kubernetes-application-developer/) |
+| Title                                                                                                                       | What to learn   | Scope/Topic                             | Description                                                                                                            | Type/Source                                                                              |
+|-----------------------------------------------------------------------------------------------------------------------------|-----------------|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
+| [How does a relational database work](http://coding-geek.com/how-databases-work/)                                           | `SQL Engine`    | `Databases`                             | Details of SQL Engine implementation and how it works                                                                  | [Article](http://coding-geek.com/how-databases-work/)                                    |
+| [System Design Primer](https://github.com/donnemartin/system-design-primer)                                                 | `System Design` | `System Design`, `Software Engineering` | Learn how to design large-scale systems. Prep for the system design interview.                                         | [GH Repo](https://github.com/donnemartin/system-design-primer)                           |
+| [Kubernetes Certified Application Developer CKAD](https://www.udemy.com/course/certified-kubernetes-application-developer/) | `K8s`, `DevOps` | `Software Development`                  | Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser - DevOps - CKAD. | [Udemy Course](https://www.udemy.com/course/certified-kubernetes-application-developer/) |
 
 
 
@@ -43,7 +43,7 @@
 - ⌛ Elixir & Phoenix
 - ⌛ [Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
 - ⌛ AWS Certification
-- 👀 Terraform & IaaS
+- 👀 Terraform & IaaC
 - ⌛ RabbitMQ
 
 
