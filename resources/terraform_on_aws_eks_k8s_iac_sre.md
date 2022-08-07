@@ -229,19 +229,19 @@ More: https://www.terraform.io/language/values/variables#variables-on-the-comman
 **Datasource** — pozwalają Terraform użyć informacji zdefiniowanych w zewnętrznych serwisach, przez inne konfiguracje lub inne funkcje.
 
 ```jsx
-**data** "aws_ami" "example" {
+  data "aws_ami" "example" {
   most_recent = true
   owners = ["amazon"]
 
-  filter = {
-		name = "name"
-	  value = ["amzn2-ami-hvm-*-gp2"]
-	}
+  filter {
+    name = "name"
+    values = ["amzn2-ami-hvm-*-gp2"]
+  }
 
-  filter = {
-		name = "architecture"
-		value = ["x86_64"]
-	}
+  filter {
+    name = "architecture"
+    values = ["x86_64"]
+  }
 
   tags = {
     Name   = "app-server"
@@ -264,3 +264,170 @@ resource "aws_instance" "example" {
 ```
 
 Datasources wspierają `count` i `for_each`, przez co możemy ich używać tak samo jak innymi zasobami.
+
+### Loops, MetaArguments, Splat Operator and Functions
+
+- Variable lists, maps
+
+```jsx
+variable "instance_type_list" {
+  description = "..."
+	type = list(string)
+	default = ["t3.micro", "t3.small", "t3.large"]
+}
+
+variable "instance_type_map" {
+	description = "..."
+	type = map(string)
+	default = {
+		"dev"  = "t3.micro"
+		"sta"  = "t3.small"
+		"prod" = "t3.large"
+	}
+}
+
+// Usage:
+var.instance_type_list[0]
+var.instance_type_map["sta"]
+```
+
+- Count (metaArgument) — gdy chcemy utworzyć kilka zasobów tego samego typu
+
+```jsx
+resource "aws_instance" "example" {
+  count         = 2
+  ami           = data.aws_ami.latest.id
+  instance_type = var.instance_type_list[count.index]
+
+	tags = {
+		"Name" = "Example-${count.index}"
+	}
+}
+```
+
+- For loop with output list/map
+
+```jsx
+output "example_list_for_loop" {
+  description = "..."
+  value = [for instance in aws_instance.example: instance.public_ip]
+}
+
+output "example_map_for_loop" {
+  description = "..."
+  value = {
+		for instance in aws_instance.example: instance.id => instance.public_ip
+	}
+}
+
+```
+
+- Splat operator
+
+```jsx
+output "example_splat" {
+  description = "..."
+	value = aws_instance.example.public_ip // if count in rsrc
+// same as 	value = aws_instance.example.*.public_ip
+}
+```
+
+### Example: Implement AZ Datasources & for_each MetaAttribute usage
+
+```jsx
+data "aws_availability_zones" "zones" {
+	filter { 
+		name   = "opt-in-status"
+		values = ["opt-in-not-required"]
+	}
+}
+
+locals {
+	zones = toset(data.aws_availability_zones.zones.names)
+}
+
+resource "aws_instance" "example" {
+  ami                    = data.aws_ami.latest.id
+  instance_type          = var.instance_type_map["sta"]
+	key_name               = var.instance_keypair
+	vpc_security_group_ids = [...]
+
+	for_each          = local.zones
+	availability_zone = each.key
+
+	tags = {
+		"Name" = "Example-For-Each-${each.key}"
+	}
+}
+
+output "instance_public_ips" {
+	description = "..."
+	value = toset([
+		for instance in aws_instance.example: instance.public_ip
+	])
+}
+
+output "instance_public_dns_map" {
+	description = "..."
+	value = tomap({
+		for az, instance in aws_instance.example:
+		az => instance.public_dns
+	})
+}
+```
+
+### Example: Utility for EC2 in multiple AZ
+
+```jsx
+# Datasource
+data "aws_ami" "example" {
+  most_recent = true
+  owners = ["amazon"]
+
+  filter {
+    name = "name"
+    values = ["amzn2-ami-hvm-*-gp2"]
+  }
+
+  filter {
+    name = "architecture"
+    values = ["x86_64"]
+  }
+
+  tags = {
+    Name   = "app-server"
+    Tested = "true"
+  }
+}
+
+data "aws_availability_zones" "zones" {
+	filter {
+		name   = "opt-in-status"
+		values = ["opt-in-not-required"]
+	}
+}
+
+data "aws_ec2_instance_type_offerings" "offerings" {
+  for_each = toset(data.aws_availability_zones.zones.names)
+  location_type = "availability-zone-id"
+
+  filter {
+    name   = "instance-type"
+    values = ["t2.micro", "t3.micro"]
+  }
+
+  filter {
+    name   = "location"
+    values = [each.key]
+  }
+
+}
+
+# Outputs
+output "instance_type" {
+  value = keys({
+    for az, details in data.aws_ec2_instance_type_offerings.offerings:
+    az => details.instance_types if length(details.instance_types) > 0
+  })
+}
+```
