@@ -45,7 +45,7 @@
 - ⌛ AWS Certification
 - 👀 Terraform & IaaC
 - ⌛ RabbitMQ
-
+- ⌛ [FastApi k8s aws eks deployment](https://www.youtube.com/watch?v=fAb6OW9Uur4&ab_channel=MukulMantosh)
 
 ### 🏅 Inspiration and credits
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
