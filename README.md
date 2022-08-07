@@ -14,10 +14,10 @@
 
 
 ### 🧑‍💼 In progress
-| Title                                                                                                                                | What to learn                  | Scope/Topic                    | Description                                                                                                            | Type/Source                                                                                                |
-|--------------------------------------------------------------------------------------------------------------------------------------|--------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [Async I/O High-level API](/resources/python_async_io.md)                                                                            | `Async I/O`                    | `Software Developmnet`         | Details of Python's async/await APIs.                                                                                  | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html)                                  |
-| [Terraform on AWS EKS Kubernetes IaC SRE](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/) | `K8s`, `DevOps`, `AWS`, `IaaC` | `Software Developmnet`         | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA). | [Udemy Course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)  |
+| Title                                                                                      | What to learn                  | Scope/Topic                    | Description                                                                                                            | Type/Source                                                                                                |
+|--------------------------------------------------------------------------------------------|--------------------------------|--------------------------------|------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
+| [Async I/O High-level API](/resources/python_async_io.md)                                  | `Async I/O`                    | `Software Developmnet`         | Details of Python's async/await APIs.                                                                                  | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html)                                  |
+| [Terraform on AWS EKS Kubernetes IaC SRE](/resources/terraform_on_aws_eks_k8s_iac_sre.md)  | `K8s`, `DevOps`, `AWS`, `IaaC` | `Software Developmnet`         | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA). | [Udemy Course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)  |
 
 ### 🏁 Finished
 | Title                                                                                                                                       | What to learn                | Scope/Topic            | Description                                                                                                       | Type/Source                                                                            | Scores |
@@ -51,4 +51,4 @@
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
 
 
-Last update: 30.07.2022
+Last update: 07.08.2022
