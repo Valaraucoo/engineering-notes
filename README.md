@@ -39,11 +39,10 @@
 - ✅ gRPC
 - ✅ Docker
 - 👀 Kubernetes - mastering in progress
-- ⌛ MongoDB
+- 👀 Terraform & IaaC
 - ⌛ Elixir & Phoenix
 - ⌛ [Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
 - ⌛ AWS Certification
-- 👀 Terraform & IaaC
 - ⌛ RabbitMQ
 - ⌛ [FastApi k8s aws eks deployment](https://www.youtube.com/watch?v=fAb6OW9Uur4&ab_channel=MukulMantosh)
 
@@ -51,4 +50,4 @@
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
 
 
-Last update: 07.08.2022
+Last update: 09.08.2022
