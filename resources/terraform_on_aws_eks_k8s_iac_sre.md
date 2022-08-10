@@ -431,3 +431,35 @@ output "instance_type" {
   })
 }
 ```
+
+**Moduł** — kontener dla wielu zasobów, które są używane wspólnie. Moduł składa się z plików `.tf` trzymanych razem w folderze.
+
+Każda konfiguracja Terraform składa się z co najmniej jednego modułu, zwanego “root module”, który składa się z wielu plików `.tf` i znajdujących się w katalogu głównym.
+
+- Moduły są używane do reużywania zasobów i ich grupowania/pakowania.
+- Moduł może być “called” przez inny moduł zwany “child module”.
+- Umożliwia to tworzenie i publikowanie modułów dla innych użytkowników.
+
+Przykład:
+
+```jsx
+module "vpc" {
+  source  = "terraform-aws-modules/vpc/aws"
+	version = "3.14.2"
+
+  name = "my-vpc"
+  cidr = "10.0.0.0/16"
+
+  azs             = ["eu-west-1a", "eu-west-1b", "eu-west-1c"]
+  private_subnets = ["10.0.1.0/24", "10.0.2.0/24", "10.0.3.0/24"]
+  public_subnets  = ["10.0.101.0/24", "10.0.102.0/24", "10.0.103.0/24"]
+
+  enable_nat_gateway = true
+  enable_vpn_gateway = true
+
+  tags = {
+    Terraform = "true"
+    Environment = "dev"
+  }
+}
+```
