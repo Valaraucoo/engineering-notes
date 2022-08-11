@@ -4,12 +4,6 @@ variable "cidr" {
   default = "10.0.0.0/16"
 }
 
-variable "azs" {
-  description = "Availability zones"
-  type = list(string)
-  default = ["eu-west-1a", "eu-west-1b"]
-}
-
 variable "private_subnets" {
   description = "Private VPC Subnets"
   type = list(string)

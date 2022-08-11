@@ -5,3 +5,7 @@ output "private_subnets" {
 output "public_subnets" {
   value = module.vpc.public_subnets
 }
+
+output "azs" {
+  value = data.aws_availability_zones.available.names
+}

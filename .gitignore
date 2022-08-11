@@ -88,3 +88,8 @@ celerybeat-schedule
 .ven
 
 .terraform
+.terraform.*
+terraform.tfstate
+terraform.tfstate.backup
+
+private-key
