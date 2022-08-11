@@ -9,3 +9,7 @@ output "public_subnets" {
 output "azs" {
   value = data.aws_availability_zones.available.names
 }
+
+output "ami" {
+  value = data.aws_ami.ami.image_id
+}
