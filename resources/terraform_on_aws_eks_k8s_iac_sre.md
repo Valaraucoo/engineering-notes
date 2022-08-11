@@ -11,7 +11,7 @@
 | Description   | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA). |
 | Status        | `In Progress`                                                                                                          |
 | Language      | 🇵🇱 Polish                                                                                                            |
-| Last update   | 07.08.2022                                                                                                             |
+| Last update   | 11.08.2022                                                                                                             |
 
 
 Trzy kroki podczas konfiguracji Terraform:
@@ -461,5 +461,80 @@ module "vpc" {
     Terraform = "true"
     Environment = "dev"
   }
+}
+```
+
+### Versions Constraints
+
+```
+   3.0   -> 3.0
+Recomended for: modules
+
+~> 3.0   -> 3.0.    3.1
+~> 3.0.1 -> 3.0.1   3.0.2  but no 3.1
+Recomended for: providers
+
+>= 3.0   -> 3.0.1   3.0.1   3.1.1   3.4.2
+
+```
+
+### Standarize TF code and terraform.tfvars
+
+```jsx
+// general-variables.tf
+variable "aws_region" {
+	description = "..."
+	type = string
+	default = "us-east-1"
+}
+
+variable "environment" {
+	description = "..."
+	type = string
+	default = "staging"
+}
+
+// locals.tf
+locals {
+	name = "${var.aws_region}-${var.environment}"
+
+	common_tags = {
+		name = local.name
+		environment = var.environment
+	}
+}
+
+// terraform.tfvars -> autoloaded variables
+// or use: -var-file="terraform.tfvars"
+aws_region = "us-east-1"
+environment = "development"
+
+// vpc-variables.tf
+variable "vpc_public_subnets" {
+	description.= "VPC Public Subnets"
+	type = list(string)
+	default = ["10.0.1.0/24", "10.0.2.0/24"]
+}
+
+// example vpc module
+
+module "vpc" {
+	...
+	azs = ["us-east-1a", "us-east-1b"]
+	public_subnets = var.vpc_public_subnets
+
+	tags = local.common_tags
+
+}
+
+// outputs.tf
+output "public_subnets" {
+	description = "..."
+	value       = module.vpc.public_subnets
+}
+
+output "azs" {
+	description = "..."
+	value       = module.vpc.azs // reference to: module "vpc" {} 
 }
 ```
