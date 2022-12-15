@@ -102,8 +102,6 @@ $$
 R(x,y) = \{ ((x,y), \mu (x,y)): (x,y) \in X \times Y \}
 $$
 
-![Untitled](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/6290e373-a8d4-4f79-8ec1-16acc21e5406/Untitled.png)
-
 Założenia:
 
 - $X, Y, Z$  — zbiory nierozmyte / klasyczne zbiory
