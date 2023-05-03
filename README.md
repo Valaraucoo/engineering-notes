@@ -13,43 +13,50 @@
 * **Machine Learning & AI** - neural networks, image processing and NLP
 
 
+ℹ️ For more resources, check out my [blog](https://blog.kamilwozniak.com).
+
+
 ### 🧑‍💼 In progress
-| Title                                                                                             | What to learn  | Scope/Topic  | Description                                                                                                             | Type/Source                                                                              |
-|---------------------------------------------------------------------------------------------------|----------------|--------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [AWS Certified Developer Associate - 2022](/resources/aws_developer_associate/1_regions_and_azs.md) | `AWS`          | `Cloud`      | Full Practice Exam with Explanations included! PASS the Amazon Web Services Certified Developer Certification DVA-C01.  | [Udemy Course](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)  |
+| Title                                                                                               | What to learn  | Scope/Topic  | Description                                                                                                            | Type/Source                                                                             |
+|-----------------------------------------------------------------------------------------------------|----------------|--------------|------------------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------|
+| [AWS Certified Developer Associate - 2022](/resources/aws_developer_associate/1_regions_and_azs.md) | `AWS`          | `Cloud`      | Full Practice Exam with Explanations included! PASS the Amazon Web Services Certified Developer Certification DVA-C01. | [Udemy Course](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/) |
+| AI Devs Course: Prompt Engineering                                                                  | `AI`           | `AI`         | Prompt Engineering, Pair Programming with GPT-4, GPT-4 Automation and Integration.                                     | [Course](https://www.aidevs.pl/)                                                        |
 
 ### 🏁 Finished
-| Title                                                                                                                                       | What to learn               | Scope/Topic                  | Description                                                                                                       | Type/Source                                                                               | Scores |
-|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|
-| [Docker and Kubernetes: The Complete Guide](/resources/docker_and_kubernetes_the_complete_guide.md)                                         | `Docker` `Kubernetes` `AWS` | `Software Development`       | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows | [Udemy Course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)    | 🏆🏆🏆 |
-| [Logic and set theory for Computer Scientists](/resources/logic_and_set_theory_for_computer_scientists/1_introduction_first_order_logic.md) | `Logic`, `Set Theory`       | `Maths`                      | First order logic, syllogisms, logics and fuzzy sets.                                                             | Lecture                                                                                   | 🏆     |
-| [Async I/O High-level API](/resources/python_async_io.md)                                                                                   | `Async I/O`                 | `Software Developmnet`       | Details of Python's async/await APIs.                                                                             | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html)                 | 🏆     |
+| Title                                                                                                                                       | What to learn               | Scope/Topic                              | Description                                                                                                       | Type/Source                                                                               | Scores |
+|---------------------------------------------------------------------------------------------------------------------------------------------|-----------------------------|------------------------------------------|-------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------|--------|
+| [Docker and Kubernetes: The Complete Guide](/resources/docker_and_kubernetes_the_complete_guide.md)                                         | `Docker` `Kubernetes` `AWS` | `Software Development`                   | Build, test, and deploy Docker applications with Kubernetes while learning production-style development workflows | [Udemy Course](https://www.udemy.com/course/docker-and-kubernetes-the-complete-guide/)    | 🏆🏆🏆 |
+| [Logic and set theory for Computer Scientists](/resources/logic_and_set_theory_for_computer_scientists/1_introduction_first_order_logic.md) | `Logic`, `Set Theory`       | `Maths`                                  | First order logic, syllogisms, logics and fuzzy sets.                                                             | Lecture                                                                                   | 🏆     |
+| [Async I/O High-level API](/resources/python_async_io.md)                                                                                   | `Async I/O`                 | `Software Developmnet`                   | Details of Python's async/await APIs.                                                                             | [Documentation](https://docs.python.org/3/library/asyncio-api-index.html)                 | 🏆     |
+| [The Rust Programming Language](https://doc.rust-lang.org/book/#the-rust-programming-language)                                              | `Rust`                      | `Software Developmnet`                   | A language empowering everyone to build reliable and efficient software.                                          | [Documentation](https://doc.rust-lang.org/book/#the-rust-programming-language)            | 🏆🏆🏆 |
+| [System Design Primer](https://github.com/donnemartin/system-design-primer)                                                                 | `System Design`             | `System Design`, `Software Engineering`  | Learn how to design large-scale systems. Prep for the system design interview.                                    | [GH Repo](https://github.com/donnemartin/system-design-primer)                            | 🏆🏆🏆 |
 
 
 ### ⏱️ Planning/New/On hold
 | Title                                                                                                                       | What to learn                   | Scope/Topic                             | Description                                                                                                             | Type/Source                                                                                                |
 |-----------------------------------------------------------------------------------------------------------------------------|---------------------------------|-----------------------------------------|-------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------|
-| [(ON HOLD 🚫)  The Rust Programming Language](https://doc.rust-lang.org/book/#the-rust-programming-language)                | `Rust`                          | `Software Developmnet`                  | A language empowering everyone to build reliable and efficient software.                                                | [Documentation](https://doc.rust-lang.org/book/#the-rust-programming-languagel)                            |
 | [(ON HOLD 🚫)  Terraform on AWS EKS Kubernetes IaC SRE](/resources/terraform_on_aws_eks_k8s_iac_sre.md)                     | `K8s`, `DevOps`, `AWS`, `IaaC`  | `Software Developmnet`                  | AWS EKS IAM, Ingress, EBS CSI, EFS CSI, VPC, Fargate, Application & Network Load Balancer, Autoscaling (CA, HPA, VPA).  | [Udemy Course](https://www.udemy.com/course/terraform-on-aws-eks-kubernetes-iac-sre-50-real-world-demos/)  |
 | [How does a relational database work](http://coding-geek.com/how-databases-work/)                                           | `SQL Engine`                    | `Databases`                             | Details of SQL Engine implementation and how it works                                                                   | [Article](http://coding-geek.com/how-databases-work/)                                                      |
-| [System Design Primer](https://github.com/donnemartin/system-design-primer)                                                 | `System Design`                 | `System Design`, `Software Engineering` | Learn how to design large-scale systems. Prep for the system design interview.                                          | [GH Repo](https://github.com/donnemartin/system-design-primer)                                             |
-| [Kubernetes Certified Application Developer CKAD](https://www.udemy.com/course/certified-kubernetes-application-developer/) | `K8s`, `DevOps`                 | `Software Development`                  | Learn concepts and practice for the Kubernetes Certification with hands-on labs right in your browser - DevOps - CKAD.  | [Udemy Course](https://www.udemy.com/course/certified-kubernetes-application-developer/)                   |
 
 
+### 🗺️ Learning plans for 2023
+- ✅ Rust
+- ✅ Next.js
+- 👀 AWS Certification
+- 👀 Finish my Master's degree :)
+- ⌛[Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
 
-### 🗺️ Learning plans for 2022
+### 🗺️ What have I learned in 2022?
 - ✅ gRPC
 - ✅ Docker
-- 👀 Kubernetes - mastering in progress
-- 👀 Terraform & IaaC
-- 👀 Rust
-- ⌛ [Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
-- ⌛ AWS Certification
-- ⌛ RabbitMQ
-- ⌛ [FastApi k8s aws eks deployment](https://www.youtube.com/watch?v=fAb6OW9Uur4&ab_channel=MukulMantosh)
+- ✅ Basics of Kubernetes
+- ✅ Terraform & IaaC
+- ✅ Basics of AWS
+- ✅ CI/CD: GitHub Actions
+
 
 ### 🏅 Inspiration and credits
 * [devops-resources](https://github.com/bregman-arie/devops-resources)
 
 
-Last update: 09.08.2022
+Last update: 03.05.2023
