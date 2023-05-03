@@ -1,7 +1,9 @@
 ## 📚 Engineering Notes
 
+This repository contains my notes and learning resources for Software Engineering, Computer Science and Systems Design.
+
 <p align="center">
-    <img width="500px" src="https://wallpaperbat.com/img/64596-engineering-desktop-wallpaper.jpg">
+    <img width="500px" src="https://d2255p4hi4gxdo.cloudfront.net/images/docs-logo.jpeg">
 </p>
 
 ℹ️  In this repository, you will find my Software Engineering notes and reading/learning list, as well as some notes for Computer Science students. Main topics:
@@ -12,8 +14,11 @@
 * **Maths** - logic, calculus, vector analysis and linear algebra
 * **Machine Learning & AI** - neural networks, image processing and NLP
 
-
 ℹ️ For more resources, check out my [blog](https://blog.kamilwozniak.com).
+
+### 🤷 Why?
+
+I'm a Software Engineer, and I'm constantly learning new things. I've decided to create this repository to keep track of my progress and share my notes with others. I hope you will find it useful!
 
 
 ### 🧑‍💼 In progress
