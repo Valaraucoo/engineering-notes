@@ -48,6 +48,8 @@ I'm a Software Engineer, and I'm constantly learning new things. I've decided to
 - ✅ Rust
 - ✅ Next.js
 - 👀 AWS Certification
+- 👀 Prompt Engineering
+- 👀 Project Management
 - 👀 Finish my Master's degree :)
 - ⌛[Advanced SQL - database engine deep dive](http://coding-geek.com/how-databases-work/)
 
