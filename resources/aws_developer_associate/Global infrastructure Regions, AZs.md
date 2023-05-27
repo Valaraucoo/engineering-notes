@@ -4,11 +4,14 @@
 
 - AWS has regions all around the world, names can be `eu-west-1`, `us-east-1` etc.
 - Each region is a separate geographic area
-- A **region** is a cluster of data centers (one data center is Availability Zone)
+- **A region is a cluster of data centers (Availability Zone consist one or more discrete data center)**
 - Each Region is designed to be isolated from the other Regions:
     - Most AWS services are **region-scoped** — if you use service in one region and we try to use it in another region it will be like a new time of using the service
     - This achieves the greatest possible fault tolerance and stability
     - AWS doesn’t automatically replicate resources across Regions
+- Each region has many AZs:
+    - Minimum 3 AZs in one region
+    - Maximum 6
 
 **AWS Availability Zones (AZ):**
 

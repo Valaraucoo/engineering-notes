@@ -22,7 +22,7 @@
 - Bootstrapping — launching commands when a machine starts (EC2 User Data script)
     - The initial script is only **run** **once** at the instance **first** **start**
     - EC2 User Data is used to automate boot tasks such as: installing updates, software, downloading common files from internet etc.
-- The EC2 User Data script runs with the root user.
+- The EC2 User Data script runs with the **root user**.
 
 ### EC2 Instance Types
 
@@ -65,7 +65,11 @@ m -> instance class
 - Security groups rules can reference by IP or by security groups
 - When you first create a security group, it has **no inbound rules**. Therefore, no inbound traffic is allowed until you add inbound rules to the security group.
 - When you first create a security group, it has an outbound rule that allows **all outbound traffic** (by default) from the resource.
-     
+    
+    ![Untitled](EC2%20Fundamentals%20e174bb6e202d4fb2afbd676195af262e/Untitled.png)
+    
+
+![Untitled](EC2%20Fundamentals%20e174bb6e202d4fb2afbd676195af262e/Untitled%201.png)
 
 - Security Groups are acting as a “firewall” on EC2 Instances:
     - Regulate access to ports
@@ -83,6 +87,8 @@ m -> instance class
 - All **outbound** traffic is **authorized** by default
 
 - You can reference security group from other security group
+
+![Untitled](EC2%20Fundamentals%20e174bb6e202d4fb2afbd676195af262e/Untitled%202.png)
 
 - Classic Ports to know:
     - **SSH** — port **22** — allows logging into a Linux instance
@@ -169,3 +175,5 @@ EC2 Capacity Reservations:
 - You always have access to EC2 capacity when you need it
 - No time commitment, no billing discounts!
 - Combine with Regional Reserved Instances and Saving Plans to benefit from billing discounts.
+
+![Untitled](EC2%20Fundamentals%20e174bb6e202d4fb2afbd676195af262e/Untitled%203.png)

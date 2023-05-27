@@ -28,17 +28,24 @@ Benefits:
 - Data Encryption
 - Snapshots — Amazon EBS provides the ability to create snapshots (backups) of any EBS volume and write a copy of the data in the volume to Amazon S3, where it is stored redundantly in multiple Availability Zones.
 
+<aside>
+💡 **EBS volumes support both in-flight encryption and encryption at rest using KMS**
+Encryption operations occur on the servers that host EC2 instances, ensuring the security of both data-at-rest and data-in-transit between an instance and its attached EBS storage.
+
+</aside>
+
 - EBS Volumes can be deleted on terminations
 - By default the root EBS volume is deleted
 - By default any other attached EBS volume is not deleted
 
 - **EBS Snapshot** — backup of EBS volume at a point of time, not necessary to detach volume to do snapshot, but it’s recommended.
     - You can back up the data on your Amazon EBS volumes to Amazon S3 by taking point-in-time snapshots.
-    - Snapshots are *incremental* backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved.
+    - Snapshots are *incremental* backups, which means that only the blocks on the device that have changed after your most recent snapshot are saved.
     - Each snapshot contains all of the information that is needed to restore your data to new EBS Volume.
 - You can copy snapshots across AZ or Region
 - When you create an EBS volume based on a snapshot, the new volume begins as an exact replica of the original volume that was used to create the snapshot.
 
+![Untitled](EC2%20Instance%20Storage,%20EBS,%20EFS%207db0674d65364314923f02c72d4dd0ff/Untitled.png)
 
 - **EBS** **Snapshot** **Archive** — move a snapshot to an “archive tier” that is 75% cheaper:
     - Amazon EBS Snapshots Archive is a new storage tier that you can use for low-cost, long-term storage of your rarely-accessed snapshots that do not need frequent or fast retrieval.
@@ -66,6 +73,7 @@ Benefits:
     - Launch permissions that control which AWS accounts can use the AMI to launch instances
     - A block device mapping that specifies the volumes to attach to the instance when it’s launched
 
+![Untitled](EC2%20Instance%20Storage,%20EBS,%20EFS%207db0674d65364314923f02c72d4dd0ff/Untitled%201.png)
 
 - AMIs are built for a **specific region** (and can be copied across regions)
 - You can launch EC2 instances from:
@@ -78,6 +86,8 @@ Benefits:
     - Build an AMI - create EBS snapshot
     - Launch instances in other region
 
+![Untitled](EC2%20Instance%20Storage,%20EBS,%20EFS%207db0674d65364314923f02c72d4dd0ff/Untitled%202.png)
+
 ### EC2 Instance Store
 
 - EBS Volumes are **network drives** with good but “limited” performance
@@ -88,10 +98,12 @@ Benefits:
 - EC2 Instance Store is located on disks that are physically attached to the host computer
     - The size of an instance store as well as the number of devices available varies by instance type.
 
+![Untitled](EC2%20Instance%20Storage,%20EBS,%20EFS%207db0674d65364314923f02c72d4dd0ff/Untitled%203.png)
+
 - **EC2 Instance Store lose their storage if they’re stopped. (ephemeral storage)**
 - Good for buffer / cache / scratch data / temporary content.
 - Risk of data loss if hardware fails.
-- Backups and Replications are **your** responsibility.
+- **Backups and Replications are your responsibility.**
 
 ### EBS Volume Types
 

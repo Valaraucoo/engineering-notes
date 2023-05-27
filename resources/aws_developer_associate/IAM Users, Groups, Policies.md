@@ -11,11 +11,15 @@
     - Groups only contain users, not other groups
     - Users don’t have to belong to any group (it’s not a good practice)
     - User can belong to multiple groups
-     
+    
+    ![Untitled](IAM%20Users,%20Groups,%20Policies%20b58ec2476f3246bcb213f9b40610e9dd/Untitled.png)
+    
 
 ### IAM: Permissions
 
 - User or Groups can be assigned to JSON documents called **policies** (IAM Policy) e.g.
+
+![Untitled](IAM%20Users,%20Groups,%20Policies%20b58ec2476f3246bcb213f9b40610e9dd/Untitled%201.png)
 
 - Policies define the permissions of the users
 - In AWS you apply the **least privilege principle**: don’t give more permissions than a user needs
@@ -24,12 +28,16 @@
 
 - If you attach IAM Policy at the group level then the policy will get applied for each user in group
 
+![Untitled](IAM%20Users,%20Groups,%20Policies%20b58ec2476f3246bcb213f9b40610e9dd/Untitled%202.png)
+
 ### IAM Policies Structure
 
 - **Identity-based** policies are attached to an IAM user, group, or role.
 - **Resource-based** policies are attached to a resource.
     - For example, you can attach resource-based policies to Amazon S3 buckets, Amazon SQS queues, VPC endpoints, and AWS Key Management Service encryption keys.
     - With resource-based policies, you can specify who has access to the resource and what actions they can perform on it.
+
+![Untitled](IAM%20Users,%20Groups,%20Policies%20b58ec2476f3246bcb213f9b40610e9dd/Untitled%203.png)
 
 - Identity-based policies and resource-based policies are both permissions policies and are evaluated **together**.
 
@@ -106,6 +114,19 @@ Roles can be created for other **AWS service**. Common use cases is to create IA
 
 - **IAM Credentials Report** (account-level) — a report that lists all your account’s users and the status of their various credentials
 - **IAM Access Advisor** (user-level) — access advisor shows the service permissions granted to a user and when those services were last accessed.
+
+Shared Responsibility Model for IAM:
+
+- AWS is responsible for everything that they do:
+    - Infrastructure (global network security)
+    - Configuration and vulnerability analysis
+    - Compliance validation
+- User:
+    - Users, Groups, Roles, Policies management and monitoring
+    - Enable MFA on all accounts
+    - Rotate all your keys often
+    - Use IAM tools to apply appropriate permissions
+    - Analyze access patterns & review permissions
 
 ### Good practices
 
